@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navigation/>
+    <!--<PlafonCashLoan/>
+    <PlafonKreditInvestasi/>
+    <PlafonLCBG/>
+    <PerhitunganKMK/>
+    <PerhitunganDSC/>
+    <PerhitunganAgunan/>-->
+    <Main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './components/Navigation.vue'
+import Main from './components/Main.vue'
+import PlafonCashLoan from './components/PlafonCashLoan.vue'
+import PlafonKreditInvestasi from './components/PlafonKreditInvestasi.vue'
+import PlafonLCBG from './components/PlafonLCBG.vue'
+import PerhitunganKMK from './components/PerhitunganKMK.vue'
+import PerhitunganDSC from './components/PerhitunganDSC.vue'
+import PerhitunganAgunan from './components/PerhitunganAgunan.vue'
+import ApplyForm from './components/ApplyForm.vue'
+import ContactUsFrom from './components/ContactUsForm.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Navigation, Main, PlafonCashLoan, PlafonKreditInvestasi, PlafonLCBG, PerhitunganKMK, 
+    PerhitunganDSC, PerhitunganAgunan, ApplyForm, ContactUsForm
   }
 }
 </script>
@@ -22,5 +38,8 @@ export default {
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  margin-top 60px
+
+table
+  margin: 0 150px;
+  width: 835px;
 </style>
