@@ -1,5 +1,5 @@
 <template>
-  <div role="group">
+  <div role="group" class="contactus">
     <label for="name">Name:</label>
     <b-form-input id="name"
                   type="text"
@@ -11,6 +11,18 @@
     <label for="message">Message:</label>
     <b-form-input id="message"
                   type="text"
-                  placeholder="Enter your message"></b-form-input>
+                  placeholder="Enter your message"
+                  :rows="3"></b-form-input>
     </div>
+    
 </template>
+<style>
+.contactus{
+  margin: 0 150px;
+}
+label{
+  float: left;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+</style>
