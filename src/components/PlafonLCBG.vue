@@ -8,24 +8,24 @@ export default {
     return {
       fields: [
         {
-          key: 'plafon_LC_BG',
+          key: 'plafon_LC_BG'
         },
         {
-          key: 'IDR_juta',
+          key: 'IDR_juta'
         },
         {
-          key: 'persen_komisi',
+          key: 'persen_komisi'
         },
         {
-          key: 'total',
+          key: 'total'
         }
       ],
       items: [
-        { plafon_LC_BG: 'Letter of Credit 1', IDR_juta: 'input', persen_bunga: 1.00, total: '-'},
-        { plafon_LC_BG: 'Letter of Credit 2', IDR_juta: 'input', persen_bunga: 1.00, total: '-'},
-        { plafon_LC_BG: 'Letter of Credit 3', IDR_juta: 'input', persen_bunga: 1.00, total: '-'},
-        { plafon_LC_BG: 'Bank Garansi 1', IDR_juta: 'input', persen_bunga: 1.00, total: '-'},
-        { plafon_LC_BG: 'Bank Garansi 2', IDR_juta: 'input', persen_bunga: 1.00, total: '-'}
+        { plafon_LC_BG: 'Letter of Credit 1', IDR_juta: 'input', persen_bunga: 1.00, total: '-' },
+        { plafon_LC_BG: 'Letter of Credit 2', IDR_juta: 'input', persen_bunga: 1.00, total: '-' },
+        { plafon_LC_BG: 'Letter of Credit 3', IDR_juta: 'input', persen_bunga: 1.00, total: '-' },
+        { plafon_LC_BG: 'Bank Garansi 1', IDR_juta: 'input', persen_bunga: 1.00, total: '-' },
+        { plafon_LC_BG: 'Bank Garansi 2', IDR_juta: 'input', persen_bunga: 1.00, total: '-' }
       ]
     }
   }

@@ -1,33 +1,42 @@
 <template>
   <div id="app">
     <Navigation/>
-    <!--<PlafonCashLoan/>
+    <PlafonCashLoan/>
     <PlafonKreditInvestasi/>
     <PlafonLCBG/>
     <PerhitunganKMK/>
     <PerhitunganDSC/>
-    <PerhitunganAgunan/>-->
+    <PerhitunganAgunan/>
+    <ContactUsForm/>
     <Main/>
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue'
-import Main from './components/Main.vue'
+/* import Main from './components/Main.vue' */
 import PlafonCashLoan from './components/PlafonCashLoan.vue'
 import PlafonKreditInvestasi from './components/PlafonKreditInvestasi.vue'
 import PlafonLCBG from './components/PlafonLCBG.vue'
 import PerhitunganKMK from './components/PerhitunganKMK.vue'
 import PerhitunganDSC from './components/PerhitunganDSC.vue'
 import PerhitunganAgunan from './components/PerhitunganAgunan.vue'
-import ApplyForm from './components/ApplyForm.vue'
-import ContactUsFrom from './components/ContactUsForm.vue'
+/* import ApplyForm from './components/ApplyForm.vue' */
+import ContactUsForm from './components/ContactUsForm.vue'
 
 export default {
   name: 'app',
   components: {
-    Navigation, Main, PlafonCashLoan, PlafonKreditInvestasi, PlafonLCBG, PerhitunganKMK, 
-    PerhitunganDSC, PerhitunganAgunan, ApplyForm, ContactUsForm
+    Navigation,
+    /* Main , */
+    PlafonCashLoan,
+    PlafonKreditInvestasi,
+    PlafonLCBG,
+    PerhitunganKMK,
+    PerhitunganDSC,
+    PerhitunganAgunan,
+    /* ApplyForm, */
+    ContactUsForm
   }
 }
 </script>
