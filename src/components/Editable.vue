@@ -1,15 +1,15 @@
 <template>
-  <div id="example">
-    <editable :content="text" @update="text = $event"></editable>
-    <div>
-      <pre>{{$data |json }}</pre>
-    </div>
-  </div>
+  <div contenteditable="true" @input="update"></div>
 </template>
 
 <script>
 export default {
-  template:'<div contenteditable="true" @input="update"></div>',
+  data() {
+    return {
+      text:"This text is editable!"
+    }
+  },
+
   props:['content'],
   mounted:function(){
     this.$el.innerText = this.content;
@@ -20,10 +20,4 @@ export default {
     }
   }
 }
-var example = new Vue({
-  el: '#example',
-  data: {
-    text:"This text is editable!"
-  }
-});
 </script>

@@ -1,44 +1,44 @@
 <template>
   <div id="app">
     <Navigation/>
-    <!--<PlafonCashLoan/>
+    <PlafonCashLoan/>
     <PlafonKreditInvestasi/>
     <PlafonLCBG/>
     <PerhitunganKMK/>
     <PerhitunganDSC/>
     <PerhitunganAgunan/>
-    <Editable/>
-    <Main/>-->
+    <Editable :content="text" @update="text = $event"/>
+    <Main/>
     <ContactUsForm/>
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue'
-/*import Main from './components/Main.vue' 
+/* import Main from './components/Main.vue' */
 import PlafonCashLoan from './components/PlafonCashLoan.vue'
 import PlafonKreditInvestasi from './components/PlafonKreditInvestasi.vue'
 import PlafonLCBG from './components/PlafonLCBG.vue'
 import PerhitunganKMK from './components/PerhitunganKMK.vue'
 import PerhitunganDSC from './components/PerhitunganDSC.vue'
 import PerhitunganAgunan from './components/PerhitunganAgunan.vue'
-import ApplyForm from './components/ApplyForm.vue' 
-import Editable from './components/Editable.vue'*/
+/* import ApplyForm from './components/ApplyForm.vue'
+ */import Editable from './components/Editable.vue'
 import ContactUsForm from './components/ContactUsForm.vue'
 
 export default {
   name: 'app',
   components: {
     Navigation,
-    /*Main , 
+    /* Main, */
     PlafonCashLoan,
     PlafonKreditInvestasi,
     PlafonLCBG,
     PerhitunganKMK,
     PerhitunganDSC,
     PerhitunganAgunan,
-    ApplyForm, 
-    Editable,*/
+    /* ApplyForm, */
+    Editable,
     ContactUsForm
   }
 }
