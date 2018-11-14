@@ -1,29 +1,29 @@
 <template>
     <div class="content1">
         <b-card title="Simulasi"
-                img-src="https://via.placeholder.com/500x300"
+                img-src="https://via.placeholder.com/500x250"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="width: 500px; height: 400px;"
                 class="mb-2">
             <p class="card-text">
-            Try it yourself
+            Ingin mengajukan kredit? Lihat simulasinya di sini!
             </p>
-            <b-button href="#" variant="primary">Go somewhere</b-button>
+            <b-button href="#" variant="primary">Simulasi</b-button>
         </b-card>
     
         <b-card title="Apply Now"
-                img-src="https://via.placeholder.com/500x300"
+                img-src="https://via.placeholder.com/500x250"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="width: 500px; height: 400px;"
                 class="mb-2">
             <p class="card-text">
-            Try it yourself
+            Mengajukan kredit sekarang lebih mudah dan cepat!
             </p>
-            <b-button href="#" variant="primary">Go somewhere</b-button>
+            <b-button variant="primary">Apply Now</b-button>
         </b-card>
     </div>
 </template>

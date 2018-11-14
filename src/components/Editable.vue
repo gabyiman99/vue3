@@ -4,19 +4,21 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      text:"This text is editable!"
+      text: 'This text is editable!'
     }
   },
 
-  props:['content'],
-  mounted:function(){
-    this.$el.innerText = this.content;
+  props: ['content'],
+
+  mounted: function () {
+    this.$el.innerText = this.content
   },
-  methods:{
-    update:function(event){
-      this.$emit('update',event.target.innerText);
+  
+  methods: {
+    update: function (event) {
+      this.$emit('update', event.target.innerText)
     }
   }
 }

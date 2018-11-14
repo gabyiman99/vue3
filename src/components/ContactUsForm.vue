@@ -9,20 +9,26 @@
                   type="text"
                   placeholder="Enter your email"></b-form-input>
     <label for="message">Message:</label>
-    <b-form-input id="message"
+    <b-form-textarea id="message"
                   type="text"
                   placeholder="Enter your message"
-                  :rows="3"></b-form-input>
+                  :rows="3"></b-form-textarea>
+    <b-button class="submit" variant="primary">Submit</b-button>
     </div>
-    
 </template>
 <style>
+
 .contactus{
-  margin: 0 150px;
+  margin: 40px 150px;
 }
+
 label{
   float: left;
-  margin-bottom: 0;
   margin-top: 5px;
+}
+
+.submit{
+  margin-top: 30px;
+  float: left;
 }
 </style>
