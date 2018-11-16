@@ -107,14 +107,16 @@
         </tr>
         <tr>
             <td>Total</td>
-            <td>{{ totalplafonCL }}</td>
-            <td>11.50%</td>
-            <td>36</td>
             <td>
-                {{ totalpokokCL }}
+                {{ totalPlafonCL }}
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                {{ totalPokokCL }}
             </td>
             <td>
-                {{ totalbungaCL }}
+                {{ totalBungaCL }}
             </td>
             <td>
                 {{ totalCL }}
@@ -128,26 +130,26 @@ export default {
   data: function () {
     return {
       plafonKL: '',
-      bunga1: 0,
-      total1: 0,
       plafonTL1: '',
-      bunga2: 0,
-      total2: 0,
       plafonTL2: '',
-      bunga3: 0,
-      total3: 0,
       plafonIL1: '',
-      pokok4: 0,
-      bunga4: 0,
-      total4: 0,
       plafonIL2: '',
-      pokok5: 0,
-      bunga5: 0,
-      total5: 0,
       plafonIL3: '',
-      pokok6: 0,
-      bunga6: 0,
-      total6: 0
+      total1fix: '',
+      total2fix: '',
+      total3fix: '',
+      total4fix: '',
+      total5fix: '',
+      total6fix: '',
+      pokok4fix: '',
+      pokok5fix: '',
+      pokok6fix: '',
+      bunga1fix: '',
+      bunga2fix: '',
+      bunga3fix: '',
+      bunga4fix: '',
+      bunga5fix: '',
+      bunga6fix: ''
     }
   },
   watch: {
@@ -196,6 +198,24 @@ export default {
       this.total6fix = this.total6.toFixed(2)
       this.pokok6fix = this.pokok6.toFixed(2)
     }
+  },
+  computed: {
+    totalCL: function () {
+      var sumtotalCL = parseFloat(this.total1fix) + parseFloat(this.total2fix) + parseFloat(this.total3fix) + parseFloat(this.total4fix) + parseFloat(this.total5fix) + parseFloat(this.total6fix)
+      return sumtotalCL.toFixed(2)
+    },
+    totalPlafonCL: function () {
+      var sumplafonCL = this.plafonKL + this.plafonTL1 + this.plafonTL2 + this.plafonIL1 + this.plafonIL2 + this.plafonIL3
+      return sumplafonCL
+    },
+    totalPokokCL: function () {
+      var sumpokokCL = parseFloat(this.pokok4fix) + parseFloat(this.pokok5fix) + parseFloat(this.pokok6fix)
+      return sumpokokCL.toFixed(2)
+    },
+    totalBungaCL: function () {
+      var sumbungaCL = parseFloat(this.bunga1fix) + parseFloat(this.bunga2fix) + parseFloat(this.bunga3fix) + parseFloat(this.bunga4fix) + parseFloat(this.bunga5fix) + parseFloat(this.bunga6fix)
+      return sumbungaCL.toFixed(2)
+    }
   }
 }
 </script>
@@ -206,8 +226,8 @@ table{
   border-collapse: collapse;
 }
 
-.cols{
-    width: 150px;
+td{
+    width: 1500px;
 }
 
 tr, td, th{

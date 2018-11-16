@@ -3,8 +3,6 @@
     <Navigation/>
     <!--<Editable :content="text" @update="text = $event"/>
     <PlafonCashLoan/>
-    <PlafonKreditInvestasi/>
-    <PlafonLCBG/>
     <PerhitunganKMK/>
     <PerhitunganDSC/>
     <PerhitunganAgunan/>
@@ -12,6 +10,8 @@
     <ContactUsForm/>
     <PlafonCLtable/>-->
     <PlafonCLtablecontent/>
+    <PlafonKreditInvestasi/>
+    <PlafonLCBG/>
   </div>
 </template>
 
@@ -19,8 +19,6 @@
 import Navigation from './components/Navigation.vue'
 /* import PlafonCLtableVue from './components/PlafonCLtable.vue'
 import PlafonCashLoan from './components/PlafonCashLoan.vue'
-import PlafonKreditInvestasi from './components/PlafonKreditInvestasi.vue'
-import PlafonLCBG from './components/PlafonLCBG.vue'
 import PerhitunganKMK from './components/PerhitunganKMK.vue'
 import PerhitunganDSC from './components/PerhitunganDSC.vue'
 import PerhitunganAgunan from './components/PerhitunganAgunan.vue'
@@ -30,6 +28,8 @@ import Main from './components/Main.vue'
 import ContactUsForm from './components/ContactUsForm.vue'
 import PlafonCLtable from './components/PlafonCLtable' */
 import PlafonCLtablecontent from './components/TableContents/PlafonCLtablecontent.vue'
+import PlafonKreditInvestasi from './components/PlafonKreditInvestasi.vue'
+import PlafonLCBG from './components/PlafonLCBG.vue'
 
 export default {
   name: 'app',
@@ -37,8 +37,6 @@ export default {
     Navigation,
     /* Main,
     PlafonCashLoan,
-    PlafonKreditInvestasi,
-    PlafonLCBG,
     PerhitunganKMK,
     PerhitunganDSC,
     PerhitunganAgunan,
@@ -46,7 +44,9 @@ export default {
     Editable,
     ContactUsForm,
     PlafonCLtable, */
-    PlafonCLtablecontent
+    PlafonCLtablecontent,
+    PlafonKreditInvestasi,
+    PlafonLCBG
   }
 }
 
@@ -58,4 +58,7 @@ export default {
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
+
+table
+  margin-top 40px
 </style>
